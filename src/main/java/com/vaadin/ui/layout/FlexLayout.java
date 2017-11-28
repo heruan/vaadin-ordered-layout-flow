@@ -228,16 +228,9 @@ public class FlexLayout extends Component
             throw new IllegalArgumentException(
                     "Flex grow property cannot be negative");
         }
-        if (flexGrow == 0) {
-            for (Component component : components) {
-                component.getElement().getStyle()
-                        .remove(FLEX_GROW_CSS_PROPERTY);
-            }
-        } else {
-            for (Component component : components) {
-                component.getElement().getStyle().set(FLEX_GROW_CSS_PROPERTY,
-                        String.valueOf(flexGrow));
-            }
+        for (Component component : components) {
+            component.getElement().getStyle().set(FLEX_GROW_CSS_PROPERTY,
+                    String.valueOf(flexGrow));
         }
     }
 
