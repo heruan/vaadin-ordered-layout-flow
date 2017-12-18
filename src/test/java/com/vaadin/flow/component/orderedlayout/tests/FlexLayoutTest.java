@@ -21,7 +21,7 @@ import org.junit.Test;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
-import com.vaadin.flow.component.orderedlayout.FlexLayout.Alignment;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 
 public class FlexLayoutTest {
 
