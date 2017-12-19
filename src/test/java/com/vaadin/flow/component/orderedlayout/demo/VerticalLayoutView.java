@@ -18,15 +18,15 @@ package com.vaadin.flow.component.orderedlayout.demo;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.NativeButton;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.demo.DemoView;
 import com.vaadin.flow.router.Route;
 
 /**
  * View for the {@link VerticalLayout} component.
- * 
+ *
  * @author Vaadin Ltd
  */
 @Route("vaadin-vertical-layout")
