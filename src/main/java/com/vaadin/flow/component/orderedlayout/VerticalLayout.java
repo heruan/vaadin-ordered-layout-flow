@@ -120,7 +120,6 @@ public class VerticalLayout extends Component
      *
      * @see VerticalLayout#getAlignItems()
      *
-     *
      * @return the general alignment used by the layout, never <code>null</code>
      */
     public Alignment getDefaultHorizontalComponentAlignment() {

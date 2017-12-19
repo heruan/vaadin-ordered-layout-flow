@@ -61,7 +61,6 @@ public interface FlexComponent<C extends Component>
      * Enum with the possible values for the way the extra space inside the
      * layout is distributed among the components. It correlates to the
      * <code>justify-content</code> CSS property.
-     *
      */
     public enum JustifyContentMode {
         START("flex-start"), END("flex-end"), BETWEEN("space-between"), AROUND(
