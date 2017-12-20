@@ -22,7 +22,6 @@ import com.vaadin.flow.component.HasOrderedComponents;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.HasStyle;
 
-
 /**
  * A component which implements Flexbox.
  *
@@ -37,8 +36,37 @@ public interface FlexComponent<C extends Component>
      * layout. It correlates to the <code>align-items</code> CSS property.
      */
     public enum Alignment {
-        START("flex-start"), END("flex-end"), CENTER("center"), STRETCH(
-                "stretch"), BASELINE("baseline"), AUTO("auto");
+
+        /**
+         * Items are positioned at the beginning of the container.
+         */
+        START("flex-start"),
+
+        /**
+         * Items are positioned at the end of the container.
+         */
+        END("flex-end"),
+
+        /**
+         * Items are positioned at the center of the container.
+         */
+        CENTER("center"),
+
+        /**
+         * Items are stretched to fit the container.
+         */
+        STRETCH("stretch"),
+
+        /**
+         * Items are positioned at the baseline of the container.
+         */
+        BASELINE("baseline"),
+
+        /**
+         * The element inherits its parent container's align-items property, or
+         * "stretch" if it has no parent container.
+         */
+        AUTO("auto");
 
         private final String flexValue;
 
@@ -63,8 +91,36 @@ public interface FlexComponent<C extends Component>
      * <code>justify-content</code> CSS property.
      */
     public enum JustifyContentMode {
-        START("flex-start"), END("flex-end"), BETWEEN("space-between"), AROUND(
-                "space-around"), EVENLY("space-evenly");
+
+        /**
+         * Items are positioned at the beginning of the container.
+         */
+        START("flex-start"),
+
+        /**
+         * Items are positioned at the end of the container.
+         */
+        END("flex-end"),
+
+        /**
+         * Items are positioned at the center of the container.
+         */
+        CENTER("center"),
+
+        /**
+         * Items are positioned with space between the lines.
+         */
+        BETWEEN("space-between"),
+
+        /**
+         * Items are positioned with space before, between, and after the lines.
+         */
+        AROUND("space-around"),
+
+        /**
+         * Items have equal space around them.
+         */
+        EVENLY("space-evenly");
 
         private final String flexValue;
 
